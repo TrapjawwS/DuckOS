@@ -16,9 +16,9 @@
     <br />
     <a href="https://skyhax.xyz/directories/duckos.html">Quick Demo</a>
     ·
-    <a href="https://skyhax.xyz">Official Website</a>
+    <a href="https://main--stately-zabaione-6d17fe.netlify.app/">Unofficial Website</a>
     ·
-    <a href="https://discord.gg/MxRvwQjrAa">Discord Server</a>
+    <a href="google.com">Google</a>
   </p>
 </div>
 
