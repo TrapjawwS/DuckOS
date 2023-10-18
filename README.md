@@ -6,7 +6,7 @@
     <img src="media/logo.gif" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">DuckOS v6</h3>
+  <h3 align="center">LlamaOS</h3>
 
   <p align="center">
     A purely static web-based operating system designed to combat internet censorship.
