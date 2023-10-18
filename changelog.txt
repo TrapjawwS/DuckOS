@@ -11,7 +11,7 @@
 - Made clockwork off by default
 - Background image preview in settings smaller
 - Changed Welcome window text
-- Removed Pokemon Black (NDS) and added more games to games app
+- Removed Pokemon Black (NDS) and added more juegos to juegos app
 - Window content (.window-body) border radius only apply on bottom corners
 - Changed border radius of the main window to non when fullscreen is active
 
