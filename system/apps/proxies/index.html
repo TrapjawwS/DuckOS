@@ -5,22 +5,19 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <p style="color: red; font-family: Tajawal;">Dynamic Proxies are our partners that are officially linked to an Skyapp domain.</p>
-  <p style="color: red; font-family: Tajawal;">ALL Dynamic Proxies will be unblocked as long the site you are using DuckOS on is not blocked.</p>
+  <p style="color: red; font-family: Tajawal;">Browsers are our partners that are officially linked to an Skyapp domain.</p>
+  <p style="color: red; font-family: Tajawal;">ALL browsers will be unblocked as long the site you are using DuckOS on is not blocked.</p>
   <p style="color: red; font-family: Tajawal;">However, static links still may be blocked.</p>
-    <h1>Choose a proxy:</h1>
+    <h1>Choose a Browser:</h1>
     <form id="redirectForm">
         <select id="linkDropdown">
-            <option value="" disabled selected>Select Proxy</option>
-            <option value="shadow" data-custom-link="true">Shadow Browser (Dynamic)</option>
-            <option value="rammerhead" data-custom-link="true">Rammerhead Browser (Dynamic)</option>
-            <option value="immortal" data-custom-link="true">Immortal Proxy (Dynamic)</option> 
-            <option value="https://prostareducation-fallon.onrender.com/" data-custom-link="true">Cobalt Browser (Not Dynamic)</option>
-            <option value="https://duckosdoge-chainedtears.b4a.run/" data-custom-link="true">Doge Unblocker (Not Dynamic) - DOWN</option>
+            <option value="" disabled selected>Select browser</option>
+            <option value="shadow" data-custom-link="true">Bing</option>
+            <option value="rammerhead" data-custom-link="true">Google</option>
         </select>
         <button class="button-56" type="button" onclick="redirect()">Go</button><br>
       <br>
-        <span id="errorSpan" style="color: red; display: none;">ERROR: No proxy selected.</span>
+        <span id="errorSpan" style="color: red; display: none;">ERROR: No browser selected.</span>
       <br>
         <span id="loadingSpan" style="color: blue; display: none;">Waiting for server response... you will be automatically redirected.</span>
     </form>
@@ -34,13 +31,10 @@
 
             if (selectedValue === "rammerhead") {
                 loadingSpan.style.display = "inline";
-                window.location.href = window.location.protocol + '//study.' + window.location.hostname + '/';
-            } else if (selectedValue === "immortal") {
-                loadingSpan.style.display = "inline"; 
-                window.location.href = window.location.protocol + '//immortal.' + window.location.hostname + '/';
+                <iframe src="google.com" frameborder="0" style="width: 100%; height: 100%; border: none; margin: none;"></iframe>
             } else if (selectedValue == "shadow") {
               loadingSpan.style.display = "inline"; 
-                window.location.href = window.location.protocol + '//shadow.' + window.location.hostname + '/';
+                <iframe src="bing.com" frameborder="0" style="width: 100%; height: 100%; border: none; margin: none;"></iframe>
             } else if (selectedValue) {
                 loadingSpan.style.display = "inline"; 
                 window.location.href = selectedValue;
