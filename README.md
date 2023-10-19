@@ -14,7 +14,7 @@
     <a href="https://github.com/GikitSRC/DuckOS/wiki"><strong><< Documentation >></strong></a>
     <br />
     <br />
-    <a href="https://skyhax.xyz/directories/duckos.html">Quick Demo</a>
+    <a href="https://LlamaOS.xyz/directories/duckos.html">Quick Demo</a>
     ·
     <a href="https://main--stately-zabaione-6d17fe.netlify.app/">Unofficial Website</a>
     ·
@@ -98,9 +98,9 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 <!-- CONTACT -->
 ## Contact 📱
 
-Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https:/arthur-can.design/) - admin@skyhax.lol
+Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https:/arthur-can.design/) - admin@LlamaOS.lol
 
-Project Link: [DuckOS Demo](https://skyhax.xyz/directories/duckos)
+Project Link: [DuckOS Demo](https://LlamaOS.xyz/directories/duckos)
 
 _Short section right? I'm just one person working on DuckOS 😞_
 

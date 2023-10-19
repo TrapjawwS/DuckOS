@@ -3,8 +3,8 @@ const config = {
   images: [
     {
       title: "Minecraft",
-      url: "gamefiles/minecraft/icon.png",
-      link: "gamefiles/minecraft/index.html"
+      url: "juegosfiles/minecraft/icon.png",
+      link: "juegosfiles/minecraft/index.html"
     },
     {
       title: "Legend of Zelda",
@@ -32,14 +32,14 @@ const config = {
       link: "https://duckos-juegos.pages.dev/slope/"
     },
     {
-      title: "World's Hardest Game",
-      url: "icons/worlds-hardest-game.jpg",
-      link: "https://duckos-juegos.pages.dev/worlds-hardest-game/"
+      title: "World's Hardest juegos",
+      url: "icons/worlds-hardest-juegos.jpg",
+      link: "https://duckos-juegos.pages.dev/worlds-hardest-juegos/"
     },
     {
-      title: "World's Hardest Game 2",
-      url: "icons/worlds-hardest-game-2.jpg",
-      link: "https://duckos-juegos.pages.dev/worlds-hardest-game-2/"
+      title: "World's Hardest juegos 2",
+      url: "icons/worlds-hardest-juegos-2.jpg",
+      link: "https://duckos-juegos.pages.dev/worlds-hardest-juegos-2/"
     },
     {
       title: "The Impossible Quiz",

@@ -27,7 +27,7 @@
   TO DO:
   ------------------------------
 - Update theme changing logic
-- Add Pokemon Mega Game (Maybe)
+- Add Pokemon Mega juegos (Maybe)
 - Fix minimizing window bug
 - Other minor updates & improvements
   ------------------------------

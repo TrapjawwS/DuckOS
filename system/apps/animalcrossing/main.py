@@ -837,7 +837,7 @@ ifnotaction10="10"
 fish="filler"
 fishnum=0
 
-#when done duplicate game but make print fast
+#when done duplicate juegos but make print fast
 
 fishinventory=["No Fish"]
 def options():
