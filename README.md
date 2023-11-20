@@ -1,140 +1,211 @@
-gbajs3 -- A Browser Based Game Boy Advance Emulator
-======
 
-This project is a Game Boy Advance emulator that is freely licensed and works in any modern browser without plugins.
+<div align = center>
 
-It began as a re-skin of the [gbajs2](https://github.com/andychase/gbajs2) fork by andychase, but now supports the [mGBA wasm](https://github.com/thenick775/mgba/tree/feature/wasm) core through the use of emscripten, for a feature rich user experience.
+<img width = 300 src = docs/Logo-light.png#gh-dark-mode-only>
+<img width = 300 src = docs/Logo.png#gh-light-mode-only> 
+ 
+<br>
+<br>
 
-This project was driven specifically by my need to play modern GBA rom hacks outside of desktop applications, without side loading or building through xcode.
+[![Badge License]][License]
+    
+    
+Self-hosted **Javascript** emulation for various system.
 
-Use it online! <https://gba.nicholas-vancise.dev>
+<br>
 
-Note: legacy features are still available in the [v1 link](https://gba.nicholas-vancise.dev/v1/), you may need to clear your cookies to use v1.
+[![Button Website]][Website] 
+[![Button Usage]][Usage]<br>
+[![Button Configurator]][Configurator]<br>
+[![Button Demo]][Demo] 
+[![Button Legacy]][Legacy]
+    
+[![Button Contributors]][Contributors]   
+ 
+Join our Discord server:
 
-Do not attempt to log into the server unless you are the server owner or an approved user, your IP may be banned.
+[![Join our Discord server!](https://invidget.switchblade.xyz/6akryGkETU)](https://discord.gg/6akryGkETU)
 
-## New Feature List
-* Golang server for logged-in user support
-* Nginx server for gbajs3 content
-* Fast Forward
-* Remappable Keyboard Bindings
-* Virtual Controls (Desktop/Mobile)
-* Movable desktop canvas and controls
-* Mobile UI support
-* Offline PWA Support
-* ~~Functional Surface-level ASM debugger (gbajs only)~~ (available in legacy v1)
-* Save state support
-* Cheat code support
-* Core Support
-    * mGBA support (wasm based)
-    * ~~gbajs support (pure javascript)~~ (available in legacy v1)
-* Admin UI
-* Postgres support
-* Persistent file system utilizing IndexedDB
-* Interactive Product Tour
+</div>
 
-## Existing Feature List
-- Both cores support realtime clock
-- For additional mGBA features and information:
-    - [compatibility list](https://wiki.gbatemp.net/wiki/MGBA)
-    - [mGBA wasm fork Readme](https://github.com/thenick775/mgba/tree/feature/wasm)
-    - [official mGBA Readme](https://github.com/mgba-emu/mgba)
-- ~~For additional gbajs2 features and information:~~ (available in legacy v1)
-    - ~~[Compatibility](https://github.com/andychase/gbajs2/wiki/Compatibility-List)~~
-    - ~~[Emulator features](https://github.com/andychase/gbajs2)~~
+<br>
 
-## To Do
-* Debugger enhancements
-* Server enhancements
-    - request an account feature suite
-    - s3 backed file storage
+**As of EmulatorJS version 4.0, this project is no longer a reverse-engineered version of the emulatorjs.com project. It is now a complete re-write,**
+
+<br>
+
+**README BEFORE YOU UPDATE:** EmulatorJS Version 4.0 is a complete re-write of the application. At least some bugs are expected. If you did any communicating with the emulator, there is a 100% chance you will need to re-write your project, and to people with active branches of this project, I wish you luck with merge conflicts (I'm very sorry). The emulator object can be accessed through the `window.EJS_emulator` object.
+
+It is **HIGHLY** suggested that you update to 4.0 ASAP.
+
+<br>
+
+### Ads
+
+*This project has no ads.* <br>
+*Although, the demo page currently has an ad to help fund this project.* <br>
+*Ads on the demo page may come and go depending on how many people are* <br>
+*funding this project.* <br>
+
+*You can help fund this project on* ***[patreon]***
+
+<br>
 
 
-## Sample Screenshots
+### Issues
 
-* Example Desktop
+*If something doesn't work, please consider opening an* ***[Issue]*** <br>
+*with as many details as possible, as well as the console log.*
 
-<img src="./readme-graphics/gbajs3-desktop-v2.png">
+<br>
 
-* Example Mobile
+### Extensions
 
-<img src="./readme-graphics/gbajs3-mobile-portrait-v2.png" width="400px">
+ **[GameLibrary]**
 
-* Example Admin
+   *A library overview for your **ROM** folder.*
 
-<img src="./readme-graphics/admin-desktop.png">
+<br>
 
-## Getting Started
-* Requires an env file of the format:
+### Development:
+
+*Run a local server with:* 
 ```
-# gbajs3
-ROM_PATH=./<local-server-rom-path>/
-SAVE_PATH=./<local-server-save-path>/
-CLIENT_HOST=https://<your-client-location>
-CERT_LOC=./<path to your certificate>
-KEY_LOC=./<path to your key>
-
-# admin
-ADMIN_APP_ID=<your unique alphanumeric app id>
-
-# postgres
-PG_DB_HOST=<database host>
-PG_DB_USER=<databse user>
-PG_DB_PASSWORD=<databse user password>
-GBAJS_DB_NAME=<your gbajs3 database name, default `gbajs3`>
-ADMIN_DB_NAME=<your goadmin database name, default `goadmin`>
-PG_DB_PORT=<postgres db port, default 5432>
-PG_SSL_MODE=<pg ssl mode>
-PG_DATA_LOCATION=./<path to postgres persistent mountpoint>
+npm i
+npm start
 ```
-* Run `cp .env.example .env` for local builds, then adjust values or add certs/required directories
-* Testing certificates can be created with:
-```
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
-```
-* Run `docker-compose up --build` and your services will build and start
-* Admin UI can be found at `/admin`, default password for all admin users are `admin`, **please log in to the admin portal and change the default passwords immediately**
-* Golang api swagger UI can be found at `/api/documentation/`
 
-## Contributing
+<br>
 
-Feel free to open discussions, issues, and pull requests. Contributions are welcome!
+**>> When reporting bugs, please specify that you are using the old version**
 
-## License
-Original work by Endrift. Repo: (Archived / No longer maintained)
-https://github.com/endrift/gbajs
-Copyright © 2012 – 2013, Jeffrey Pfau
+<br>
+<br>
+<br>
 
-Original work by Endrift. Repo: (mGBA wasm base)
-https://github.com/endrift/mgba
-mGBA is Copyright © 2013 – 2018 Jeffrey Pfau. It is distributed under the [Mozilla Public License version 2.0](https://www.mozilla.org/MPL/2.0/). A full copy of the license is available at my [fork](https://github.com/thenick775/mgba).
+<h1 align = center>Supported Systems</h1>
 
-Original work by andychase. Repo: (gbajs2 base)
-https://github.com/andychase/gbajs2
-Copyright © 2020, Andrew Chase 
+<br>
 
-Copyright © 2022 - 2023, Nicholas VanCise
+<div align = center>
 
-All rights reserved.
+### Nintendo
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+**[Game Boy Advance][Nintendo Game Boy Advance]**   | 
+**[Famicom / NES][NES / Famicom]**   | 
+**[Virtual Boy][Virtual Boy]**
+    
+**[Game Boy][Nintendo Game Boy]**   | 
+**[SNES]**   | 
+**[DS][Nintendo DS]**   | 
+**[64][Nintendo 64]**
 
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
+<br>
+<br>
 
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
+### Sega
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
+**[Master System][Sega Master System]**   | 
+**[Mega Drive][Sega Mega Drive]**   | 
+**[Game Gear][Sega Game Gear]**
+    
+**[Saturn][Sega Saturn]**   | 
+**[32X][Sega 32X]**   | 
+**[CD][Sega CD]**
+    
+<br>
+<br>
+
+### Atari
+
+**[2600][Atari 2600]**   | 
+**[5200][Atari 5200]**   | 
+**[7800][Atari 7800]**   | 
+**[Lynx][Atari Lynx]**   | 
+**[Jaguar][Atari Jaguar]**
+
+
+<br>
+<br>
+
+### Other
+    
+**[PlayStation]**   | 
+**[Arcade]**   | 
+**[3DO]**   | 
+**[MAME 2003]**
+    
+</div>
+
+<br>
+
+***PSP is not yet supported***. Some of y'all may have seen that I pushed a "beta" ppsspp core, but this core is not ready for daily use. It still crashes randomly and any games that use 3d (so like, all of them) will just have a white screen (and might just crash). Do not open issues related to the "psp" core.
+
+
+<!-- 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 --->
+
+[License]: LICENSE
+[Issue]: https://github.com/ethanaobrien/emulatorjs/issues
+[patreon]: https://patreon.com/EmulatorJS
+
+
+<!-- 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮   Extensions   🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 --->
+
+[GameLibrary]: https://github.com/Ramaerel/emulatorjs-GameLibrary
+
+
+<!-- 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮   Quicklinks   🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 --->
+
+[Configurator]: https://emulatorjs.org/editor.html
+[Contributors]: docs/Contributors.md
+[Website]: https://emulatorjs.org/
+[Legacy]: https://coldcast.org/games/1/Super-Mario-Bros
+[Usage]: https://emulatorjs.org/docs/
+[Demo]: https://demo.emulatorjs.org/
+
+
+<!-- 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮  Systems  🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 -->
+
+[Nintendo Game Boy Advance]: docs/Systems/Nintendo%20Game%20Boy%20Advance.md
+[Nintendo Game Boy]: docs/Systems/Nintendo%20Game%20Boy.md
+[Nintendo 64]: docs/Systems/Nintendo%2064.md
+[Nintendo DS]: docs/Systems/Nintendo%20DS.md
+
+[Sega Master System]: docs/Systems/Sega%20Master%20System.md
+[Sega Mega Drive]: docs/Systems/Sega%20Mega%20Drive.md
+[Sega Game Gear]: docs/Systems/Sega%20Game%20Gear.md
+[Sega Saturn]: docs/Systems/Sega%20Saturn.md
+[Sega 32X]: docs/Systems/Sega%2032X.md
+[Sega CD]: docs/Systems/Sega%20CD.md
+
+[Atari Jaguar]: docs/Systems/Atari%20Jaguar.md
+[Atari Lynx]: docs/Systems/Atari%20Lynx.md
+[Atari 7800]: docs/Systems/Atari%207800.md
+[Atari 2600]: docs/Systems/Atari%202600.md
+[Atari 5200]: docs/Systems/Atari%205200.md
+
+[NES / Famicom]: docs/Systems/NES-Famicom.md
+[SNES]: docs/Systems/SNES.md
+
+[TurboGrafs-16 / PC Engine]: docs/Systems/TurboGrafs%2016-PC%20Engine.md
+[WanderSwan / Color]: docs/Systems/WanderSwan-Color.md
+[Neo Geo Poket]: docs/Systems/Neo%20Geo%20Poket.md
+[PlayStation]: docs/Systems/PlayStation.md
+[Virtual Boy]: docs/Systems/Virtual%20Boy.md
+[Arcade]: docs/Systems/Arcade.md
+[MSX]: docs/Systems/MSX.md
+[3DO]: docs/Systems/3DO.md
+[MAME 2003]: docs/Systems/MAME%202003.md
+
+
+<!-- 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮  Badges  🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 🎮 --->
+
+[Badge License]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
+
+[Button Configurator]: https://img.shields.io/badge/Configurator-992cb3?style=for-the-badge
+[Button Contributors]: https://img.shields.io/badge/Contributors-54b7dd?style=for-the-badge
+[Button Website]: https://img.shields.io/badge/Website-736e9b?style=for-the-badge
+[Button Legacy]: https://img.shields.io/badge/Legacy-ab910b?style=for-the-badge
+[Button Usage]: https://img.shields.io/badge/Usage-2478b5?style=for-the-badge
+[Button Demo]: https://img.shields.io/badge/Demo-528116?style=for-the-badge
+[Button Beta]: https://img.shields.io/badge/Beta-bb044f?style=for-the-badge
