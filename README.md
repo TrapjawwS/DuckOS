@@ -1,158 +1,140 @@
+gbajs3 -- A Browser Based Game Boy Advance Emulator
+======
 
-<a name="readme-top"></a>
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="media/logo.gif" alt="Logo" width="80" height="80">
-  </a>
+This project is a Game Boy Advance emulator that is freely licensed and works in any modern browser without plugins.
 
-  <h3 align="center">LlamaOS</h3>
+It began as a re-skin of the [gbajs2](https://github.com/andychase/gbajs2) fork by andychase, but now supports the [mGBA wasm](https://github.com/thenick775/mgba/tree/feature/wasm) core through the use of emscripten, for a feature rich user experience.
 
-  <p align="center">
-    A purely static web-based operating system designed to combat internet censorship.
-    <br />
-    <a href="https://github.com/GikitSRC/DuckOS/wiki"><strong><< Documentation >></strong></a>
-    <br />
-    <br />
-    <a href="https://LlamaOS.xyz/directories/duckos.html">Quick Demo</a>
-    ·
-    <a href="https://main--stately-zabaione-6d17fe.netlify.app/">Unofficial Website</a>
-    ·
-    <a href="google.com">Google</a>
-  </p>
-</div>
+This project was driven specifically by my need to play modern GBA rom hacks outside of desktop applications, without side loading or building through xcode.
 
----
+Use it online! <https://gba.nicholas-vancise.dev>
 
-<!-- ABOUT THE PROJECT -->
-## About DuckOS 🪐
+Note: legacy features are still available in the [v1 link](https://gba.nicholas-vancise.dev/v1/), you may need to clear your cookies to use v1.
 
-![Screenshot of DuckOS](media/showcase.png)
+Do not attempt to log into the server unless you are the server owner or an approved user, your IP may be banned.
 
-There are so many web-based operating systems out there for this purpose... (I won't call out names) but I never tought they feel like a real Operating System. That's when I got the idea of creating my own web-based operating system, with a unique look and packed with features, having a goal of being at least 90% bug-free and easy to use. But why should you choose to use DuckOS over the others?
+## New Feature List
+* Golang server for logged-in user support
+* Nginx server for gbajs3 content
+* Fast Forward
+* Remappable Keyboard Bindings
+* Virtual Controls (Desktop/Mobile)
+* Movable desktop canvas and controls
+* Mobile UI support
+* Offline PWA Support
+* ~~Functional Surface-level ASM debugger (gbajs only)~~ (available in legacy v1)
+* Save state support
+* Cheat code support
+* Core Support
+    * mGBA support (wasm based)
+    * ~~gbajs support (pure javascript)~~ (available in legacy v1)
+* Admin UI
+* Postgres support
+* Persistent file system utilizing IndexedDB
+* Interactive Product Tour
 
-Here's why:
-* Meets the standards. Modern, simple and user-friendly interface.
-* Powerful. Equipped with the best flagship proxies to help you go on unblocked sites.
-* Flexible. Easily customize, develop and integrate.
+## Existing Feature List
+- Both cores support realtime clock
+- For additional mGBA features and information:
+    - [compatibility list](https://wiki.gbatemp.net/wiki/MGBA)
+    - [mGBA wasm fork Readme](https://github.com/thenick775/mgba/tree/feature/wasm)
+    - [official mGBA Readme](https://github.com/mgba-emu/mgba)
+- ~~For additional gbajs2 features and information:~~ (available in legacy v1)
+    - ~~[Compatibility](https://github.com/andychase/gbajs2/wiki/Compatibility-List)~~
+    - ~~[Emulator features](https://github.com/andychase/gbajs2)~~
 
-Of course, DuckOS isn't created to replace your real Operating System (MacOS, Windows, etc). It will always be a project I made just for fun, with NO GOALS OF MAKING SCHOOL DISTRICTS CHASE AFTER ME
-
-Find our website's link on the `top of the page`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-<!-- GETTING STARTED -->
-## Self-Hosting 💾
-These are instructions on hosting DuckOS by yourself.
-
-### Prerequisites
-
-* 28MB of Disk Space (1MB if you replace the images with FontAwesome)
-* Your own Domain
-* Static Web Hosting Service
-
-### Installation
+## To Do
+* Debugger enhancements
+* Server enhancements
+    - request an account feature suite
+    - s3 backed file storage
 
 
-1. Make a fork DuckOS's Github Repo
-2. You can host DuckOS on a static web hosting service like [Netlify](https://www.netlify.com/) or [Cloudflare Pages](https://pages.cloudflare.com/) (There are many other options available) <br>
+## Sample Screenshots
 
-**That's it! With just two steps, you can get DuckOS up and running ;) However, if you want dynamic proxies to work, you'll have to do a bit more work and add a subdomain accordingly with the proxies app.**
+* Example Desktop
 
+<img src="./readme-graphics/gbajs3-desktop-v2.png">
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* Example Mobile
 
+<img src="./readme-graphics/gbajs3-mobile-portrait-v2.png" width="400px">
 
----
+* Example Admin
 
-<!-- CONTRIBUTING -->
-## Contributing 🦮
+<img src="./readme-graphics/admin-desktop.png">
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-<!-- LICENSE -->
-## License 📝
-
-Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-<!-- CONTACT -->
-## Contact 📱
-
-Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https:/arthur-can.design/) - admin@LlamaOS.lol
-
-Project Link: [DuckOS Demo](https://LlamaOS.xyz/directories/duckos)
-
-_Short section right? I'm just one person working on DuckOS 😞_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments 🤭
-
-Resources that made DuckOS possible.
-
-* [Apache 2.0 License](license.txt)
-* [Fontawesome](https://fontawesome.com/)
-* [JQuery](https://jquery.com/)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Canva](https://www.canva.com/)
-* [Github](https://github.com)
-  <br>
-**My amazing and encouraging friends that prevented me from giving up on this project 💖**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-<!-- DONATIONS -->
-## Donations 💸
-
-~~like~~, no, **love** the project? Consider donating to help me with the development of DuckOS!
-
-Zelle Phone Number
-```bash
-+19255770178
+## Getting Started
+* Requires an env file of the format:
 ```
+# gbajs3
+ROM_PATH=./<local-server-rom-path>/
+SAVE_PATH=./<local-server-save-path>/
+CLIENT_HOST=https://<your-client-location>
+CERT_LOC=./<path to your certificate>
+KEY_LOC=./<path to your key>
 
-Cashapp Tag
-```bash
-$chainedtears
+# admin
+ADMIN_APP_ID=<your unique alphanumeric app id>
+
+# postgres
+PG_DB_HOST=<database host>
+PG_DB_USER=<databse user>
+PG_DB_PASSWORD=<databse user password>
+GBAJS_DB_NAME=<your gbajs3 database name, default `gbajs3`>
+ADMIN_DB_NAME=<your goadmin database name, default `goadmin`>
+PG_DB_PORT=<postgres db port, default 5432>
+PG_SSL_MODE=<pg ssl mode>
+PG_DATA_LOCATION=./<path to postgres persistent mountpoint>
 ```
-
-Wise Transfer Email
-```bash
-1mp0ss1bl321@gmail.com
+* Run `cp .env.example .env` for local builds, then adjust values or add certs/required directories
+* Testing certificates can be created with:
 ```
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
+```
+* Run `docker-compose up --build` and your services will build and start
+* Admin UI can be found at `/admin`, default password for all admin users are `admin`, **please log in to the admin portal and change the default passwords immediately**
+* Golang api swagger UI can be found at `/api/documentation/`
 
-Ko-Fi Support Link
+## Contributing
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X5JDVA1)
+Feel free to open discussions, issues, and pull requests. Contributions are welcome!
 
+## License
+Original work by Endrift. Repo: (Archived / No longer maintained)
+https://github.com/endrift/gbajs
+Copyright © 2012 – 2013, Jeffrey Pfau
 
+Original work by Endrift. Repo: (mGBA wasm base)
+https://github.com/endrift/mgba
+mGBA is Copyright © 2013 – 2018 Jeffrey Pfau. It is distributed under the [Mozilla Public License version 2.0](https://www.mozilla.org/MPL/2.0/). A full copy of the license is available at my [fork](https://github.com/thenick775/mgba).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Original work by andychase. Repo: (gbajs2 base)
+https://github.com/andychase/gbajs2
+Copyright © 2020, Andrew Chase 
 
+Copyright © 2022 - 2023, Nicholas VanCise
 
+All rights reserved.
 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.

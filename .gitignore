@@ -1,1 +1,16 @@
-node_modules
+.DS_Store
+/**/local_roms/**
+/**/local_saves/**
+/**/users.db
+/**/swag
+/**/.env
+/**/certs/**
+/**/*.log
+/**/authapi
+/**/authserver
+/**/build/**
+/**/adm.ini
+/**/config*.json
+/**/pg_data/**
+/**/test_data/**
+/**/stats*
